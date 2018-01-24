@@ -10,17 +10,6 @@ main() {
 }
 
 launch_xvfb() {
-    # local xvfbLockFilePath="/tmp/.X1-lock"
-    # if [ -f "${xvfbLockFilePath}" ]
-    # then
-    #     log_i "Removing xvfb lock file '${xvfbLockFilePath}'..."
-    #     if ! rm -v "${xvfbLockFilePath}"
-    #     then
-    #         log_e "Failed to remove xvfb lock file"
-    #         exit 1
-    #     fi
-    # fi
-
     # Start and wait for either Xvfb to be fully up or we hit the timeout.
     Xvfb $DISPLAY -screen 0 1366x768x24 &
     local loopCount=0
