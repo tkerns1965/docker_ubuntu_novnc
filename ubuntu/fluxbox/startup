@@ -1,2 +1,2 @@
-gedit &
+# gedit &
 exec /usr/bin/fluxbox -log "/docker/.fluxbox/log"
