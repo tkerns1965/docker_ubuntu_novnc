@@ -8,8 +8,8 @@ services:
                 - UBUNTU_VERSION=16.04
         environment:
             - VNC_PASSWORD=${VNC_PASSWORD}
-        image: ubuntu_vnc
-        container_name: ubuntu_vnc1
+        image: ubuntu_novnc
+        container_name: ubuntu_novnc1
         # volumes:
             # - /srv/docker_volumes/letsencrypt:/etc/letsencrypt
         ports:
