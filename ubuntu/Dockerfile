@@ -30,8 +30,8 @@ RUN apt update && \
     ln -s $HOME/noVNC/vnc_auto.html $HOME/noVNC/index.html
 
 COPY fluxbox/* $HOME/.fluxbox/
-COPY bootstrap.sh $HOME
+COPY bootstrap.sh .
 
-RUN chmod u+x $HOME/bootstrap.sh
+RUN chmod u+x bootstrap.sh
 
-CMD ["$HOME/bootstrap.sh"]
+CMD ["bootstrap.sh"]
