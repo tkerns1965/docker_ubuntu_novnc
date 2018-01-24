@@ -34,4 +34,4 @@ COPY bootstrap.sh .
 
 RUN chmod u+x bootstrap.sh
 
-CMD ["bootstrap.sh"]
+CMD ["/bootstrap.sh"]
