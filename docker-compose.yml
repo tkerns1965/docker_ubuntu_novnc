@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+    ubuntu:
+        build:
+            context: ubuntu
+            args:
+                - UBUNTU_VERSION=16.04
+        environment:
+            - VNC_PASSWORD=${VNC_PASSWORD}
+        image: ubuntu_vnc
+        container_name: ubuntu_vnc1
+        # volumes:
+            # - /srv/docker_volumes/letsencrypt:/etc/letsencrypt
+        ports:
+            - "5901:5901"
+            - "6901:6901"

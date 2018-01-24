@@ -1,1 +1,1 @@
-# docker_ubuntu_novnc
+# docker_ubuntu_vnc
